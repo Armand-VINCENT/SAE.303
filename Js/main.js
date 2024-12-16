@@ -1,44 +1,48 @@
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
-const box1 = document.querySelector(".sec1 .box1");
-const box2 = document.querySelector(".sec1 .box2");
-
-gsap.to(box1, {
-  xPercent: 500,
-  duration: 2,
-  scrollTrigger: {
-    trigger: box1,
-    toggleActions: "restart reverse play reverse",
-    start: "top 40%",
-    end: "bottom 30%",
-    markers: false,
-    scrub: 1
-  }
+/* Main navigation */
+let panelsSection = document.querySelector("#panels"),
+  panelsContainer = document.querySelector("#panels-container"),
+  tween;
+document.querySelectorAll(".anchor").forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    console.log("click");
+    e.preventDefault();
+    let targetElem = document.querySelector(e.target.getAttribute("href")),
+      y = targetElem;
+    if (targetElem && panelsContainer.isSameNode(targetElem.parentElement)) {
+      let totalScroll = tween.scrollTrigger.end - tween.scrollTrigger.start,
+        totalMovement = cont.scrollWidth - innerWidth;
+      y = Math.round(
+        tween.scrollTrigger.start +
+          (targetElem.offsetLeft / totalMovement) * totalScroll
+      );
+    }
+    gsap.to(window, {
+      scrollTo: {
+        y: y,
+        autoKill: false
+      },
+      duration: 1
+    });
+  });
 });
 
-gsap.to(box2, {
-  xPercent: 500,
-  duration: 2,
+/* Panels */
+const cont = document.querySelector("#panels-container");
+const panels = gsap.utils.toArray("#panels-container .panel");
+
+tween = gsap.to(panels, {
+  x: () => -1 * (cont.scrollWidth - innerWidth),
+  ease: "none",
   scrollTrigger: {
-    trigger: box1,
-    toggleActions: "restart reverse play reverse",
-    start: "top 40%",
-    end: "bottom 30%",
-    scrub: 3
+    trigger: "#panels-container",
+    pin: true,
+    start: "top top",
+    scrub: 1,
+    end: () => "+=" + (cont.scrollWidth - innerWidth),
+    onUpdate: (self) => {
+     console.log(self.progress)
+    }
   }
 });
-
-gsap.from(".sec2 .box", {
-    scrollTrigger : {
-        trigger : ".sec2 .box",
-        toggleActions : "restart none none reset",
-        start : "top 80%",
-        markers : false,
-    },
-    y : 100,
-    opacity : 0,
-    scale : 0,
-    ease : "elastic(0.4,0.15)",
-    duration : 1,
-    stagger : 0.1,
-})

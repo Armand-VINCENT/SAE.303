@@ -7,27 +7,127 @@
     <link rel="stylesheet" href="Css/style.css">
 </head>
 <body>
+  
 
-    <header>
-        <h1>ScrollTrigger</h1>
-      </header>
-      <section class="sec1">
-        <h2>Exemple 1</h2>
-        <div class="container">
-          <div class="box box1"></div>
-          <div class="box box2"></div>
-        </div>
-      </section>
-      <section class="sec2">
-        <h2>Exemple 2</h2>
-        <div class="container">
-          <div class="box box1"></div>
-          <div class="box box2"></div>
-          <div class="box box3"></div>
-          <div class="box box4"></div>
-          <div class="box box5"></div>
-        </div>
-      </section>
+  <div class="bob">
+  <img src="Assets/BOB_char_walking.svg" style="position: relative;" alt="">
+</div>
+
+    <div id="page" class="site">
+
+      
+
+       
+     
+      
+        <main id="content" class="site-content" role="main">
+      <!--  Intro --> 
+        
+          <section id="intro" class="full-screen pt-5 blue">
+           <img src="Assets/Intro.svg" alt="">
+          </section>
+      
+          <section id="panels">
+      
+            <div id="panels-container" style="width: 500%;">
+                <!--  Musée --> 
+              <article id="panel-1" class="panel full-screen red">
+            
+                <img src="Assets/MuseeTest.svg" alt="" style="">
+      
+                   
+                    
+                
+              </article>
+              <article id="panel-2" class="panel full-screen orange">
+            
+                    <img src="Assets/Cinéteste.svg" alt="">
+            
+              </article>
+              <article id="panel-3" class="panel full-screen purple">
+              
+                    <img src="Assets/BIblio.svg" alt="">
+
+              </article>
+              <article id="panel-4" class="panel full-screen green">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-6">
+      
+                      <img src="" alt="">
+      
+                    </div>
+                    <div class="col-6 d-flex flex-column">
+      
+                      <h2>Panel 4</h2>
+      
+                      <p class="step-description">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Including versions of Lorem Ipsum.
+                      </p>
+      
+                      <div class="panels-navigation">
+                        <div class="nav-panel" data-sign="minus"><a href="#panel-3" class="anchor">Prev</a></div>
+                        <div class="nav-panel" data-sign="plus"><a href="#panel-5" class="anchor">Next</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article id="panel-5" class="panel full-screen gray">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-6">
+      
+                      <img src="" alt="">
+      
+                    </div>
+                    <div class="col-6 d-flex flex-column">
+      
+                      <h2>Panel 5</h2>
+      
+                      <p class="step-description">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Including versions of Lorem Ipsum.
+                      </p>
+                      <div class="cards-wrapper">
+                        <div class="card">test</div>
+                        <div class="card">test</div>
+                        <div class="card">test</div>
+                        <div class="card">test</div>
+                        <div class="card">test</div>
+                        <div class="card">test</div>
+                        <div class="card">test</div>
+                        <div class="card">test</div>
+                        <div class="card">test</div>
+                        <div class="card">test</div>
+                        <div class="card">test</div>
+      
+                        <div class="card">test</div>
+                        <div class="card">test</div>
+                        <div class="card">test</div>
+                        <div class="card">test</div>
+                        <div class="card">test</div>
+                        <div class="card">test</div>
+                        <div class="card">test</div>
+                        <div class="card">test</div>
+                        <div class="card">test</div>
+                        <div class="card">test</div>
+                      </div>
+      
+                      <div class="panels-navigation text-right">
+                        <div class="nav-panel" data-sign="minus"><a href="#panel-4" class="anchor">Prev</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+      
+          <section id="map" class="full-screen"></section>
+      
+        </main>
+      
+      </div>
 
 
 
@@ -36,10 +136,7 @@
 
 
 
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
@@ -53,15 +150,14 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/PixiPlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
 
+    <script src="Js/gsap.min.js"></script>
     <script>
-        // use a script tag or an external JS file
         document.addEventListener("DOMContentLoaded", (event) => {
-        gsap.registerPlugin(Flip,ScrollTrigger,Observer,ScrollToPlugin,Draggable,MotionPathPlugin,EaselPlugin,PixiPlugin,TextPlugin)
-        // gsap code here!
+            gsap.registerPlugin(Flip, ScrollTrigger, Observer, ScrollToPlugin, Draggable, MotionPathPlugin, EaselPlugin, PixiPlugin, TextPlugin);
+            // gsap code here!
         });
-    
+        console.log(gsap);
     </script>
     <script src="Js/main.js"></script>
-    <script src="Js/gsap.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2382 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1b0700;
+      }
+
+      .cls-2 {
+        fill: #a00000;
+      }
+
+      .cls-3 {
+        fill: #48281e;
+      }
+
+      .cls-4 {
+        fill: #2c1612;
+      }
+
+      .cls-5 {
+        fill: #da0000;
+      }
+
+      .cls-6 {
+        fill: #ed1c24;
+        stroke: #ff0;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+
+      .cls-7 {
+        fill: #1a1a1a;
+      }
+
+      .cls-8 {
+        fill: #f2f2f2;
+        font-family: Miso, Miso;
+        font-size: 68px;
+      }
+
+      .cls-9 {
+        fill: #fffbe8;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="1" width="2381" height="800"/>
+  <rect class="cls-9" x="511" y="29" width="1827" height="743"/>
+  <rect class="cls-5" x="1322" y="578" width="200" height="362" rx="40.62" ry="40.62"/>
+  <rect class="cls-2" x="1341" y="595" width="166" height="300.46" rx="40.62" ry="40.62"/>
+  <rect class="cls-5" x="1944" y="578" width="200" height="362" rx="40.62" ry="40.62"/>
+  <rect class="cls-2" x="1961" y="595" width="166" height="300.46" rx="40.62" ry="40.62"/>
+  <rect class="cls-3" x="1" y="800" width="2381" height="280"/>
+  <g>
+    <rect class="cls-5" x="1102" y="578" width="200" height="362" rx="40.62" ry="40.62"/>
+    <rect class="cls-2" x="1119" y="595" width="166" height="300.46" rx="40.62" ry="40.62"/>
+    <path class="cls-4" d="M1262,1022h-120c-22.09,0-40-17.91-40-40v-182h200v182c0,22.09-17.91,40-40,40Z"/>
+  </g>
+  <path class="cls-4" d="M1484,1022h-120c-22.09,0-40-17.91-40-40v-182h200v182c0,22.09-17.91,40-40,40Z"/>
+  <g>
+    <rect class="cls-5" x="1543" y="578" width="200" height="362" rx="40.62" ry="40.62"/>
+    <rect class="cls-2" x="1560" y="595" width="166" height="300.46" rx="40.62" ry="40.62"/>
+    <path class="cls-4" d="M1703,1022h-120c-22.09,0-40-17.91-40-40v-182h200v182c0,22.09-17.91,40-40,40Z"/>
+  </g>
+  <path class="cls-4" d="M2104,1022h-120c-22.09,0-40-17.91-40-40v-182h200v182c0,22.09-17.91,40-40,40Z"/>
+  <polygon class="cls-4" points="321.75 1080 0 1080 0 800 430 800 321.75 1080"/>
+  <g>
+    <rect class="cls-5" x="2165" y="578" width="200" height="362" rx="40.62" ry="40.62"/>
+    <rect class="cls-2" x="2182" y="595" width="166" height="300.46" rx="40.62" ry="40.62"/>
+    <path class="cls-4" d="M2325,1022h-120c-22.09,0-40-17.91-40-40v-182h200v182c0,22.09-17.91,40-40,40Z"/>
+  </g>
+  <g>
+    <rect class="cls-5" x="694" y="578" width="200" height="362" rx="40.62" ry="40.62"/>
+    <rect class="cls-2" x="711" y="595" width="166" height="300.46" rx="40.62" ry="40.62"/>
+    <path class="cls-4" d="M854,1022h-120c-22.09,0-40-17.91-40-40v-182h200v182c0,22.09-17.91,40-40,40Z"/>
+  </g>
+  <g>
+    <rect class="cls-5" x="477" y="578" width="200" height="362" rx="40.62" ry="40.62"/>
+    <rect class="cls-2" x="494" y="595" width="166" height="300.46" rx="40.62" ry="40.62"/>
+    <path class="cls-4" d="M637,1022h-120c-22.09,0-40-17.91-40-40v-182h200v182c0,22.09-17.91,40-40,40Z"/>
+  </g>
+  <rect class="cls-7" width="430" height="800"/>
+  <polygon class="cls-6" points="385 496.44 266.81 428.2 266.81 458.07 46.96 458.07 46.96 535.07 266.81 535.07 266.81 564.67 385 496.44"/>
+  <text class="cls-8" transform="translate(88.64 514.07)"><tspan x="0" y="0">Cinéma</tspan></text>
+</svg>
