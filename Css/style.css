@@ -50,6 +50,7 @@ h2 {
   padding: 1rem 2rem;
 }
 
+
 #panels #panels-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,6 +61,33 @@ h2 {
   overflow: hidden;
   background-color: #ddd;
 }
+
+
+#second-panels-container{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding: 0;
+  overflow: hidden;
+  background-color: #dddddd;
+}
+
+#second-panels-container .panel{
+  width: fit-content;
+  position: relative;
+  min-width: min-content;
+  height: auto;
+  /* overflow: hidden; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #333;
+  text-align: left;
+  padding: 0;
+}
+
 #panels #panels-container .panel {
   position: relative;
   min-width: min-content;
