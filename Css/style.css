@@ -1,6 +1,12 @@
 /* Most of these styles could be removed but are for the demo to look better */
 /* test*/
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html,
 body {
   margin: 0;
@@ -110,4 +116,75 @@ h2 {
   left: 5%;
   position: fixed;
   z-index: 100000000000000000000000000000000000;
+}
+
+
+@font-face {
+  font-family: 'Miso';
+  src: url('../fonts/miso-regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nexus';
+  src: url('../fonts/nexusbold-regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fontbase{
+  font-family: 'Miso';
+  line-height: 0.8;
+}
+
+.fontnumber{
+  font-family: 'Nexus';
+  line-height: 0.8;
+}
+
+.joconde{
+  position: absolute; top: 15.7rem; left: 84.2rem
+}
+
+.data_first--number{
+    
+  font-size: 30em;
+}
+
+.data_first{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  gap: 1rem;
+  color: #B73E4A;
+  margin-left: 33rem;
+  margin-top: 2rem;
+}
+.data_first--info{
+font-size: 7rem;
+margin-top: 5rem;
+}
+
+
+.typewritter{
+  display: flex;
+  /* justify-content: center; */
+  
+}
+
+.typewritter p{
+  overflow: hidden;
+  /* margin-inline: auto; */
+  white-space: nowrap;
+  animation: typing 2s steps(20) forwards, blink 1s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
 }

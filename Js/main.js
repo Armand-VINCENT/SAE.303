@@ -46,3 +46,14 @@ tween = gsap.to(panels, {
     }
   }
 });
+
+lottie.loadAnimation({
+  container: document.getElementById('lottie-container'), // Conteneur cible
+  path: 'assets/Joconde.json', // Chemin vers votre fichier .lottie
+  renderer: 'svg', // Type de rendu (svg, canvas, html)
+  loop: true,      // Animation en boucle
+  autoplay: true   // Démarrage automatique
+});
+
+
+

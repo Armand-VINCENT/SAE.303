@@ -33,7 +33,29 @@
                 <!--  Musée --> 
               <article id="panel-1" class="panel full-screen red">
             
-                <img src="Assets/MuseeTest.svg" alt="">
+                <div class="data_first">
+                 
+                  <p class="data_first--number fontnumber">1222</p>
+                  
+                <div class="typewritter">
+                  <div>
+                  <p class="data_first--info fontbase">Musées ouvert en France</p>
+                   </div>
+                </div>
+              </div>
+              
+
+                <img src="Assets/MuseeV1.svg" alt="">
+              
+                
+
+                <section>
+                  <div id="lottie-container" class="joconde"></div>
+                  <!-- <img src="assets/Joconde.png" alt="" style="position: absolute; top: 0%; left: 50%;">  -->
+               
+          
+              </section>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
       
                    
                     
@@ -49,81 +71,24 @@
                     <img src="Assets/BIblio.svg" alt="">
 
               </article>
-              <article id="panel-4" class="panel full-screen green">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-6">
-      
-                      <img src="" alt="">
-      
-                    </div>
-                    <div class="col-6 d-flex flex-column">
-      
-                      <h2>Panel 4</h2>
-      
-                      <p class="step-description">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Including versions of Lorem Ipsum.
-                      </p>
-      
-                      <div class="panels-navigation">
-                        <div class="nav-panel" data-sign="minus"><a href="#panel-3" class="anchor">Prev</a></div>
-                        <div class="nav-panel" data-sign="plus"><a href="#panel-5" class="anchor">Next</a></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </article>
-              <article id="panel-5" class="panel full-screen gray">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-6">
-      
-                      <img src="" alt="">
-      
-                    </div>
-                    <div class="col-6 d-flex flex-column">
-      
-                      <h2>Panel 5</h2>
-      
-                      <p class="step-description">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Including versions of Lorem Ipsum.
-                      </p>
-                      <div class="cards-wrapper">
-                        <div class="card">test</div>
-                        <div class="card">test</div>
-                        <div class="card">test</div>
-                        <div class="card">test</div>
-                        <div class="card">test</div>
-                        <div class="card">test</div>
-                        <div class="card">test</div>
-                        <div class="card">test</div>
-                        <div class="card">test</div>
-                        <div class="card">test</div>
-                        <div class="card">test</div>
-      
-                        <div class="card">test</div>
-                        <div class="card">test</div>
-                        <div class="card">test</div>
-                        <div class="card">test</div>
-                        <div class="card">test</div>
-                        <div class="card">test</div>
-                        <div class="card">test</div>
-                        <div class="card">test</div>
-                        <div class="card">test</div>
-                        <div class="card">test</div>
-                      </div>
-      
-                      <div class="panels-navigation text-right">
-                        <div class="nav-panel" data-sign="minus"><a href="#panel-4" class="anchor">Prev</a></div>
-                      </div>
-                    </div>
-                  </div>
+             
+              <article id="panel-4" class="panel full-screen purple">
+              
+                <img src="Assets/Tableauvert_Plan de travail.svg" alt="">
+
+                   </article>
+              
                 </div>
               </article>
             </div>
           </section>
-      
-          <section id="map" class="full-screen"></section>
+          
+          <section class="covid">
+            <img src="/SAE.303/Assets/Fall 1.svg"  style="width: 110%;" alt="">
+          </section>
+
+          
+          
       
         </main>
       
@@ -140,20 +105,14 @@
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Observer.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EaselPlugin.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/PixiPlugin.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+
 
     <script src="Js/gsap.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", (event) => {
-            gsap.registerPlugin(Flip, ScrollTrigger, Observer, ScrollToPlugin, Draggable, MotionPathPlugin, EaselPlugin, PixiPlugin, TextPlugin);
+            gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
             // gsap code here!
         });
         console.log(gsap);
